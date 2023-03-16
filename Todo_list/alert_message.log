@@ -1,0 +1,86 @@
+INFO  tasks.models  2023-03-08 23:18:45,253 Message is sent to Telegram
+INFO  tasks.models  2023-03-08 23:18:51,768 Message is sent to Telegram
+INFO  tasks.models  2023-03-08 23:20:00,597 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-08 23:28:49,985 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-08 23:30:19,935 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-08 23:30:56,544 Message is sent to Telegram
+WARNING  tasks.telegram  2023-03-08 23:33:19,791 Telegram is not working
+WARNING  tasks.telegram  2023-03-08 23:36:38,754 Telegram is not working, description: 'Unauthorized
+WARNING  tasks.telegram  2023-03-08 23:37:50,105 Telegram is not working, description: Unauthorized 
+WARNING  tasks.telegram  2023-03-08 23:38:27,009 Telegram is not working, description: 'Unauthorized'
+WARNING  tasks.telegram  2023-03-08 23:39:11,520 Telegram is not working, description: 'Unauthorized'
+INFO  tasks.telegram  2023-03-08 23:39:56,309 Message is sent to Telegram
+WARNING  tasks.telegram  2023-03-08 23:40:24,595 Telegram is not working, description: 'Unauthorized'
+INFO  tasks.telegram  2023-03-08 23:58:52,223 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-08 23:59:20,951 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 00:09:25,167 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 00:09:55,269 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 00:24:51,640 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 00:25:52,185 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 00:27:59,660 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 00:32:07,621 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 00:36:55,643 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 00:42:13,543 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 00:49:03,996 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 00:49:36,667 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 01:02:20,260 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 01:05:02,349 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 01:05:50,752 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 01:05:56,182 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 01:06:53,875 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 01:09:29,659 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 01:10:49,584 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 01:11:58,863 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 01:12:37,495 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 01:13:35,258 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 10:26:19,339 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 10:27:54,912 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 12:08:26,854 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 12:19:35,086 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 12:20:36,884 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 12:30:43,966 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 12:31:22,620 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 18:49:52,509 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 18:50:49,146 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 18:51:10,122 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 18:51:24,942 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 18:51:43,344 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 18:52:00,524 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 18:52:22,286 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-09 18:52:43,477 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 20:22:42,463 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 20:38:31,233 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 21:30:38,555 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 22:12:26,159 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 22:12:39,429 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 22:12:58,939 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 22:41:16,801 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 22:41:21,946 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 22:41:58,096 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 22:42:18,181 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 22:42:50,418 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 22:43:37,043 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 22:44:00,685 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 22:44:18,440 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 22:50:59,378 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 22:51:07,438 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 22:51:16,298 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 22:51:21,368 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-10 22:52:16,856 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-11 01:13:04,139 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-11 01:13:51,648 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-11 14:45:06,509 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-11 20:50:30,135 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-11 20:53:22,024 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-12 01:02:10,270 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-12 01:02:35,249 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-12 01:03:11,250 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-12 01:13:07,507 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-12 01:13:48,918 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-12 01:14:16,520 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-12 01:15:55,074 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-12 01:16:14,316 Message is sent to Telegram
+WARNING  tasks.telegram  2023-03-14 20:52:44,814 Telegram is not working, description: 'Gateway Timeout'
+INFO  tasks.telegram  2023-03-15 20:58:17,171 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-15 20:59:10,901 Message is sent to Telegram
+INFO  tasks.telegram  2023-03-15 21:09:15,838 Message is sent to Telegram

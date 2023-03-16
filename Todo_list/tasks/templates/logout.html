@@ -1,0 +1,10 @@
+{% extends "task_list.html" %}
+{% block content %}
+    <h3>Вы вышли из своей учетной записи</h3>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            <a href="{% url 'login' %}">Войти</a><p>
+            <a href="/">На главную</a>
+        </small>
+    </div>
+{% endblock content %}

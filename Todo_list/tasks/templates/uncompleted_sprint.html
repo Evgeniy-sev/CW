@@ -1,0 +1,77 @@
+{% extends 'task_list.html' %}
+
+{% block content %}
+<h3 class="task-title">Список спринтов: </h3><br>
+<style>
+   table {
+    table-layout: fixed; /* Фиксированная ширина ячеек */
+    width: 100%; /* Ширина таблицы */
+    border: 1px solid black;
+    border-collapse: collapse;
+   }
+   td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+   </style>
+<table>
+    <tr>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+          Спринт
+        </td >
+        <td  class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Проект
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Создан
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Начало
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Конец
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            В работе
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+        Действие
+        </td>
+    </tr>
+</table>
+    {% for sprint in sprint_ %}
+            <table><tr>
+                <td>
+                <span class="task-title" style="font-size: 11pt; font-weight: bold" >
+                    {{sprint.title}}
+                </span><br>
+                    </td>
+                <td>
+                  {{sprint.project}}
+                </td>
+                <td>
+                  {{ sprint.created_time|date:"d-m-Y" }}<br>
+                </td>
+                <td>
+                  {{ sprint.start_date|date:"d-m-Y" }}<br>
+                </td>
+                <td>
+                  {{ sprint.end_date|date:"d-m-Y" }}<br>
+                </td>
+                <td>
+                  {{ sprint.is_active }}<br>
+                </td>
+                <td >
+                <a class="btn btn-outline-primary" href="{% url 'update_sprint' sprint.pk %}">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                </a>
+                    <a class="btn btn-outline-primary" href="{% url 'delete_sprint' sprint.pk %}">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                    </a>
+                </td>
+             </tr>
+            </table>
+    {% endfor %}
+<br>
+<a href="/">Главная страница</a>
+{% endblock content %}

@@ -1,0 +1,20 @@
+{% extends "task_list.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+        <h2>Редактирование профиля</h2><br>
+      <div class="media">
+        <div class="media-body">
+          <h4 class="account-heading">Пользователь:     {{ user.username }}</h4><br>
+        </div>
+      </div>
+          <form action="." method="post" enctype="multipart/form-data">
+              <table>
+                {{ profile_form.as_table }}
+              </table><br><br>
+        {% csrf_token %}
+        <p><input type="submit" value="Save changes"></p>
+    </form>
+    </div>
+{% endblock content %}
+

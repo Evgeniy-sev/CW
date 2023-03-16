@@ -1,0 +1,34 @@
+[
+{
+  "model": "tasks.status",
+  "pk": 5,
+  "fields": {
+    "title": "plan",
+    "parent": null
+  }
+},
+{
+  "model": "tasks.status",
+  "pk": 6,
+  "fields": {
+    "title": "in_work",
+    "parent": 5
+  }
+},
+{
+  "model": "tasks.status",
+  "pk": 8,
+  "fields": {
+    "title": "task_check",
+    "parent": 6
+  }
+},
+{
+  "model": "tasks.status",
+  "pk": 9,
+  "fields": {
+    "title": "completed",
+    "parent": 8
+  }
+}
+]

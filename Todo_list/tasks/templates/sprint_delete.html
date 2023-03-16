@@ -1,0 +1,10 @@
+{% extends 'task_list.html' %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <h2>Удаление спринта</h2>
+        <p>Вы действительно хотите удалить спринт:  "{{ object }}"?</p>
+        <input type="submit" value="Удалить спринт">
+    </form>
+{% endblock content %}

@@ -1,0 +1,21 @@
+{% extends 'task_list.html' %}
+
+{% block content %}
+    <h2>Создание спринта</h2><br>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div>
+        Название спринта:&nbsp&nbsp
+        {{ form.title }}&nbsp&nbsp</div>
+        <div>
+        <br>Цель спринта:&nbsp&nbsp
+        {{ form.description }}&nbsp&nbsp
+        </div>
+        <div>
+        <br>Проект:&nbsp&nbsp
+        {{ form.project }}&nbsp&nbsp
+        </div><br>
+        <input type="submit" value="Save">
+    </form>
+{% endblock content %}
+

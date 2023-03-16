@@ -1,0 +1,15 @@
+{% extends 'task_list.html' %}
+
+{% block content %}
+    <h2>Создание статуса</h2><br>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div>
+        Название статуса:&nbsp&nbsp
+        {{ form.title }}&nbsp&nbsp</div><br><br>
+         <div>
+        Назначается после:&nbsp&nbsp
+        {{ form.parent }}&nbsp&nbsp</div><br><br>
+        <input type="submit" value="Save">
+    </form>
+{% endblock content %}

@@ -1,0 +1,303 @@
+{% extends 'task_list.html' %}
+
+{% block content %}
+<h3 class="task-title">Список незавершенных задач: </h3><br>
+<style>
+   table {
+    table-layout: fixed; /* Фиксированная ширина ячеек */
+    width: 100%; /* Ширина таблицы */
+    border: 1px solid black;
+    border-collapse: collapse;
+   }
+   td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+   </style>
+<h4 class="task-title">Запланировано: </h4><br>
+<table>
+    <tr>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Задача
+        </td >
+        <td  class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Создана
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Автор
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Спринт
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Проект
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Статус
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Исполнитель
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+        Действие
+        </td>
+    </tr>
+</table>
+    {% for task in tasks_ %}
+        {% if task.status.title == 'plan' or not task.status %}
+            <table><tr>
+                <td>
+                <span class="task-title" style="font-size: 11pt; font-weight: bold" >
+                    {{task.title}}
+                </span><br>
+                    </td>
+                <td>
+                    {{ task.created_time|date:"d-m-Y" }}
+                </td>
+                <td>
+                    {{ task.user }}
+                </td>
+                <td>
+                  <a href="/update_sprint/{{task.sprint.pk }}"> {{ task.sprint }}</a><br>
+                  <span style="font-size: 9pt" > {{ task.sprint.start_date|date:"d-m-Y" }}-<br>
+                    {{ task.sprint.end_date|date:"d-m-Y" }}</span>
+                </td>
+                <td>
+                    {{ task.sprint.project }}
+                </td>
+                <td>
+                    {{ task.status }}
+                </td>
+                <td>
+                     {{ task.executor }}
+                </td>
+                <td >
+                <a class="btn btn-outline-primary" href="{% url 'update' task.pk %}">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                </a>
+                    <a class="btn btn-outline-primary" href="{% url 'delete' task.pk %}">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                    </a>
+                </td>
+             </tr>
+            </table>
+        {% endif %}
+    {% endfor %}
+<br>
+<h4 class="task-title">В работе: </h4><br>
+<table>
+    <tr>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Задача
+        </td >
+        <td  class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Создана
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Автор
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Спринт
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Проект
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Статус
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Исполнитель
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+        Действие
+        </td>
+    </tr>
+</table>
+    {% for task in tasks_ %}
+        {% if task.status.title == 'in_work' %}
+            <table><tr>
+                <td>
+                <span class="task-title" style="font-size: 11pt; font-weight: bold" >
+                    {{task.title}}
+                </span><br>
+                    </td>
+                <td>
+                    {{ task.created_time|date:"d-m-Y" }}
+                </td>
+                <td>
+                    {{ task.user }}
+                </td>
+                <td>
+                  <a href="/update_sprint/{{task.sprint.pk }}"> {{ task.sprint }}</a><br>
+                  <span style="font-size: 9pt" > {{ task.sprint.start_date|date:"d-m-Y" }}-<br>
+                    {{ task.sprint.end_date|date:"d-m-Y" }}</span>
+                </td>
+                <td>
+                    {{ task.sprint.project }}
+                </td>
+                <td>
+                    {{ task.status }}
+                </td>
+                <td>
+                     {{ task.executor }}
+                </td>
+                <td >
+                <a class="btn btn-outline-primary" href="{% url 'update' task.pk %}">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                </a>
+                    <a class="btn btn-outline-primary" href="{% url 'delete' task.pk %}">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                    </a>
+                </td>
+             </tr>
+            </table>
+        {% endif %}
+    {% endfor %}
+<br>
+
+<h4 class="task-title">На проверке: </h4><br>
+<table>
+    <tr>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Задача
+        </td >
+        <td  class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Создана
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Автор
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Спринт
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Проект
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Статус
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Исполнитель
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+        Действие
+        </td>
+    </tr>
+</table>
+    {% for task in tasks_ %}
+        {% if task.status.title == 'task_check' %}
+            <table><tr>
+                <td>
+                <span class="task-title" style="font-size: 11pt; font-weight: bold" >
+                    {{task.title}}
+                </span><br>
+                    </td>
+                <td>
+                    {{ task.created_time|date:"d-m-Y" }}
+                </td>
+                <td>
+                    {{ task.user }}
+                </td>
+                <td>
+                  <a href="/update_sprint/{{task.sprint.pk }}"> {{ task.sprint }}</a><br>
+                  <span style="font-size: 9pt" > {{ task.sprint.start_date|date:"d-m-Y" }}-<br>
+                    {{ task.sprint.end_date|date:"d-m-Y" }}</span>
+                </td>
+                <td>
+                    {{ task.sprint.project }}
+                </td>
+                <td>
+                    {{ task.status }}
+                </td>
+                <td>
+                     {{ task.executor }}
+                </td>
+                <td >
+                <a class="btn btn-outline-primary" href="{% url 'update' task.pk %}">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                </a>
+                    <a class="btn btn-outline-primary" href="{% url 'delete' task.pk %}">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                    </a>
+                </td>
+             </tr>
+            </table>
+        {% endif %}
+    {% endfor %}
+<br>
+
+<h4 class="task-title">Другие: </h4><br>
+<table>
+    <tr>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Задача
+        </td >
+        <td  class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Создана
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Автор
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Спринт
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Проект
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Статус
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+            Исполнитель
+        </td>
+        <td class="task-title" style="font-size: 14pt; font-weight: bold; background-color: #a0a0a0">
+        Действие
+        </td>
+    </tr>
+</table>
+    {% for task in tasks_ %}
+        {% if task.status.title != 'task_check' and task.status.title != 'in_work' and task.status.title != 'plan' and task.status    %}
+           <table><tr>
+                <td>
+                <span class="task-title" style="font-size: 11pt; font-weight: bold" >
+                    {{task.title}}
+                </span><br>
+                    </td>
+                <td>
+                    {{ task.created_time|date:"d-m-Y" }}
+                </td>
+                <td>
+                    {{ task.user }}
+                </td>
+                <td>
+                  <a href="/update_sprint/{{task.sprint.pk }}"> {{ task.sprint }}</a><br>
+                  <span style="font-size: 9pt" > {{ task.sprint.start_date|date:"d-m-Y" }}-<br>
+                    {{ task.sprint.end_date|date:"d-m-Y" }}</span>
+                </td>
+                <td>
+                    {{ task.sprint.project }}
+                </td>
+                <td>
+                    {{ task.status }}
+                </td>
+                <td>
+                     {{ task.executor }}
+                </td>
+                <td >
+                <a class="btn btn-outline-primary" href="{% url 'update' task.pk %}">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                </a>
+                    <a class="btn btn-outline-primary" href="{% url 'delete' task.pk %}">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                    </a>
+                </td>
+             </tr>
+            </table>
+        {% endif %}
+    {% endfor %}
+<br>
+
+<a href="/">Главная страница</a>
+{% endblock content %}
+
+

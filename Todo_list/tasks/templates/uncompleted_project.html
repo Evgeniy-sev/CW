@@ -1,0 +1,12 @@
+{% extends 'task_list.html' %}
+
+{% block content %}
+    <h2>Изменение проекта "{{ object }}"</h2><br><br>
+    <form action="" method="post">
+            <table>
+             {% csrf_token %}
+             {{ form.as_table }}
+            </table><br><br>
+        <input type="submit" value="Применить изменения">
+    </form>
+{% endblock content %}

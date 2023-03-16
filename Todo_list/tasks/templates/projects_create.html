@@ -1,0 +1,16 @@
+{% extends 'task_list.html' %}
+
+{% block content %}
+    <h2>Создание нового проекта</h2><br>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div>
+        Название проекта:&nbsp&nbsp
+        {{ form.title }}&nbsp&nbsp</div>
+        <div>
+        <br>Описание проекта:&nbsp&nbsp
+        {{ form.description }}&nbsp&nbsp
+        </div><br>
+        <input type="submit" value="Save">
+    </form>
+{% endblock content %}
