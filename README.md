@@ -18,7 +18,7 @@ Pycharm 2021.3.3 Python 3.8
 Rest api используется для формирования онлайн выпадающего меню ('Проекты').
 
 Реализована авторизация (в фикстурах пользователи:
-admin admin,
+( admin admin,
 kDv5CcsZRGCCmWx  user1,
 kDv5CcsZRGCCmW   user2,
 Z4jht5cuApZAZi8  user3).
